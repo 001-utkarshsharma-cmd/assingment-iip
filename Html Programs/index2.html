@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <div id="card"> 
+        <h1 id="title">DOM Example</h1>
+        <p id="name">Utkarsh</p>
+        <p id="age">18</p>
+        <p id="branch">CSE AI</p>
+        <p id="college">GEC Bikaner</p>
+        <input type="text" id="input" placeholder="Enter your name">
+        <input type="text" id="inputAge" placeholder="Enter your age">
+        <input type="text" id="inputBranch" placeholder="Enter your branch">
+        <input type="text" id="inputCollege" placeholder="Enter your college">
+        <br><br>
+        <button id="updatedBin">Updated name</button>
+        <button id="AgeBin">Change age</button>
+        <button id="BranchBin">Change branch</button>
+        <button id="CollegeBin">Change college</button>
+        <button id="resultBin">Show Result</button>
+        <button id="removeBin">Remove Result</button>
+    </div>
+
+    <script>
+        let title =document.getElementById("title");
+        let name =document.getElementById("name");
+        let age =document.getElementById("age");
+        let branch =document.getElementById("branch");
+        let college =document.getElementById("college");
+        let updatedBin =document.getElementById("updatedBin");
+
+        title.textContent="DOM Example Updated";
+        name.textContent="Utkarsh";
+
+        updatedBin.addEventListener("click",function(){
+            let studentName = input.value;
+            name.textContent="Name: " + studentName;});
+        AgeBin.addEventListener("click",function(){
+            let studentAge = inputAge.value;
+            age.textContent="Age: " + studentAge;});
+        BranchBin.addEventListener("click",function(){
+            let studentBranch = inputBranch.value;
+            branch.textContent="Branch: " + studentBranch;});
+        CollegeBin.addEventListener("click",function(){
+            let studentCollege = inputCollege.value;
+            college.textContent="College: " + studentCollege;});
+       
+    </script>
+
+
+</body>
+</html>

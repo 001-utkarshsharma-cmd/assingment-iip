@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .login-box {
+            width: 300px;
+            margin: 100px auto;
+            padding: 25px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="password" id="password" placeholder="Password">
+        <p id="message"></p>
+        <br style=height:10px;>">
+        <button onclick="showPassword()">Show Password</button>
+
+        <br>
+        <button onclick="login()">Login</button>
+    </div>
+
+
+    <script>
+
+        function login() {
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username == "admin" && password == "1234") {
+
+                document.getElementById("message").innerHTML =
+                    "Login Successful!";
+
+                document.getElementById("message").style.color = "green";
+
+            }
+
+            else {
+
+                document.getElementById("message").innerHTML =
+                    "Invalid Username or Password";
+
+                document.getElementById("message").style.color = "red";
+
+            }
+        }
+
+    </script>
+    <script>
+        function showPassword() {
+            let passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>

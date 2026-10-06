@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid #048ba3;
+            flex-direction: row;
+            align-items: left;
+            justify-content: top;
+            height: 40vh;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #925353;
+;
+            font-size: 27px;
+            line-height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p style="font-color: #c9a6a6;">Box 1</p>
+        </div>
+        <div class="box">
+            <p style="font-color: #c9a6a6;">Another Box</p>
+        </div>
+        <div class="box">
+            <p style="font-color: #c9a6a6;">Third Box</p>
+        </div>
+    </div>
+</body>
+</html>
