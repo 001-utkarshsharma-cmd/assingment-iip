@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Rahul</name>
+        <course>B.Tech CSE</course>
+        <semester>1</semester>
+        <marks>85</marks>
+    </student>
+
+    <student>
+        <name>Priya</name>
+        <course>B.Tech CSE-AI</course>
+        <semester>1</semester>
+        <marks>92</marks>
+    </student>
+
+    <student>
+        <name>Aman</name>
+        <course>B.Tech IT</course>
+        <semester>1</semester>
+        <marks>78</marks>
+    </student>
+
+    <student>
+        <name>Sneha</name>
+        <course>B.Tech CSE-AI</course>
+        <semester>1</semester>
+        <marks>96</marks>
+    </student>
+
+    <student>
+        <name>Arjun</name>
+        <course>B.Tech CSE</course>
+        <semester>1</semester>
+        <marks>88</marks>
+    </student>
+
+    <student>
+        <name>Neha</name>
+        <course>B.Tech IT</course>
+        <semester>1</semester>
+        <marks>81</marks>
+    </student>
+</students>

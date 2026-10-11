@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="heading">Welcome to Student Portal</h1>
+
+    <div id="studentInfo">
+        <p><strong>Course:</strong> B.Tech</p>
+        <p><strong>Semester:</strong> 1st Semester</p>
+    </div>
+
+    <h2>Student Marks</h2>
+
+    <button onclick="loadStudents()">Load Students</button>
+    <button onclick="toggleTable()">Hide/Show Table</button>
+    <button onclick="findTopStudent()">Top Student</button>
+    <button onclick="changeHeading()">Change Heading</button>
+    <button onclick="toggleTheme()">Dark/Light Mode</button>
+
+    <p id="result"></p>
+
+    <div id="tableContainer">
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody id="studentData"></tbody>
+        </table>
+    </div>
+    <div id="topStudent">
+    </div>
+    <div id="modest"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

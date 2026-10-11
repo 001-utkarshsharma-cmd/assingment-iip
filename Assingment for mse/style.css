@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode table {
+    color: white;
+    border-color: white;
+}
+
+.dark-mode th {
+    background-color: #100f0f;
+}
+
+.dark-mode td {
+    background-color: #020202;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
